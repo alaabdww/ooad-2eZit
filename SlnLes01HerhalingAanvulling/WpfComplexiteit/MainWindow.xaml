@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfComplexiteit"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="484,171,0,0" VerticalAlignment="Top" Height="37" Width="114"/>
-        <TextBox HorizontalAlignment="Left" Margin="129,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="261" Height="37"/>
+        Title="MainWindow" Height="312" Width="618">
+    <Grid Margin="0,0,130,162">
+        <Button x:Name="btnAnalyseer" Content="ANALYSEER" HorizontalAlignment="Left" Margin="366,13,0,0" VerticalAlignment="Top" Height="37" Width="114" Click="btnAnalyseer_Click"/>
+        <TextBox x:Name="txtWoord" HorizontalAlignment="Left" Margin="11,13,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="261" Height="37"/>
+        <TextBlock x:Name="txtResultaat" HorizontalAlignment="Left" Margin="11,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="177" Width="261"/>
 
     </Grid>
 </Window>
