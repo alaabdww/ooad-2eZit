@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfRaadLand.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfRaadLand"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="612" Width="800">
+    <Grid Height="612" VerticalAlignment="Top">
+        <StackPanel Margin="0,72,0,340" Height="200" Orientation="Horizontal">
+            <Image Source="/img/argentina.png" Height="200" Width="auto" Margin="20,0,10,0" Tag="argentinie" MouseUp="Image_MouseUp"/>
+            <Image Source="/img/finland.png" Height="200" Width="auto" Margin="0,0,10,0" Tag="finland" MouseUp="Image_MouseUp"/>
+            <Image Source="/img/japan.png" Height="200" Width="auto" Margin="0,0,10,0" Tag="japan" MouseUp="Image_MouseUp"/>
+            <Image Source="/img/marokko.png" Height="200" Width="auto" Margin="0,0,10,0" Tag="marokko" MouseUp="Image_MouseUp"/>
+            <Image Source="/img/nieuwzeeland.png" Height="200" Width="auto" Margin="0,0,10,0" Tag="nieuwzeeland" MouseUp="Image_MouseUp"/>
+        </StackPanel>
+        <TextBlock x:Name="resultaatTxt" HorizontalAlignment="Left" Margin="10,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="66" Width="635" FontSize="18"/>
+        <Button x:Name="startBtn" Content="START" HorizontalAlignment="Left" Margin="10,399,0,0" VerticalAlignment="Top" Height="38" Width="85" FontSize="18" FontWeight="Bold" Click="startBtn_Click"/>
+        <Rectangle x:Name="tijdRectangle" HorizontalAlignment="Left" Height="50" Margin="10,479,0,0" Stroke="#FFAFAFAF" VerticalAlignment="Top" Width="500" Fill="#FFC4E5FF"/>
+
+    </Grid>
+</Window>
